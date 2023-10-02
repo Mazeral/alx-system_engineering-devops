@@ -1,2 +1,2 @@
 #!/bin/bash
-find -type f . | grep "*.js" | rm -rf
+find -type f . | grep "[[:alnum:]].js" | rm 
