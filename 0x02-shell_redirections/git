@@ -1,2 +1,3 @@
 #!/bin/bash
 chmod u+x * && git add . && git commit -m "ALX" && git push
+
