@@ -1,0 +1,2 @@
+#!/bin/bash
+chmod u+x * && git add . && git commit -m "Shell, init files, variables and expansions" && git push
