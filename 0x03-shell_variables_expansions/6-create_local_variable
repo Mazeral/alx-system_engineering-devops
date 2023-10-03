@@ -1,2 +1,2 @@
 #!/bin/bash
-local -p BEST="School"
+declare -p BEST="School"
