@@ -1,0 +1,11 @@
+#!/usr/bin/env bash
+# Displays 'Best School' using until loop
+
+school="Best School"
+i=0
+ten=10
+until [[ $i -eq 10 ]]
+do
+	echo $school
+	((i++))
+done
