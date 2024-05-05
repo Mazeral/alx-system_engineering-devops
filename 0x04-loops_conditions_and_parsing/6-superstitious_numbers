@@ -15,11 +15,11 @@ china="bad luck from China"
 japan="bad luck from Japan"
 italy="bad luck from Italy"
 while ((i<=20)); do
+	echo $i
 	case $i in
 	4) echo $china ;;
 	9) echo $japan ;;
 	17) echo $italy ;;
-	*) echo $i ;;
 
 	esac
 	((i++))
