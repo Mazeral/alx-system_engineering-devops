@@ -3,12 +3,13 @@
 
 hi="Hi"
 school="Best School"
-
-for i in {1..10}
+i=0
+while ((i<10))
 do
 	echo $school
 	if [ $i -eq 9 ]
 	then
 		echo $hi
 	fi
+	((i++))
 done
