@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+best="Best School"
+i=0
+while ((i<10))
+do
+	echo $best
+	((i++))
+done
