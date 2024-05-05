@@ -6,10 +6,10 @@ school="Best School"
 i=0
 while ((i<10))
 do
-	echo $school
 	if [ $i -eq 9 ]
 	then
 		echo $hi
 	fi
+	echo $school
 	((i++))
 done
