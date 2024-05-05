@@ -1,6 +1,7 @@
 !/usr/bin/env bash
 # This script is displaying "Best School" 10 times
 school="Best School"
-for i in $(seq 10) ;do
+for i in ((i=0; i<10; i++))
+do
 	echo $school
 done
