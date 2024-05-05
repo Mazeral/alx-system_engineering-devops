@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# Going through a for loop with while, in the 9th iteration prints hi
+# Displays 'Best School' every time, in the 9th iteration, displays 'Hi' as well.
 
 hi="Hi"
 school="Best School"
