@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# Displays 'Best School' every time, in the 9th iteration, displays 'Hi' as well.
+#Displays 'Best School' every time, in the 9th iteration, displays 'Hi' as well.
 
 hi="Hi"
 school="Best School"
