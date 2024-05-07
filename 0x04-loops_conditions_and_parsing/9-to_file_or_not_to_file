@@ -13,7 +13,7 @@
 file_path="school"
 
 if [ -e $file_path ]; then
-	echo "file exists"
+	echo "school file exists"
 
 	if [ -f $file_path ];then
 		echo "school is a regular file"
