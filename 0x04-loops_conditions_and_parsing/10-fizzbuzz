@@ -15,8 +15,8 @@ while ((i<101)); do
 		echo "Buzz"
 	elif [ $((i % 3)) -eq 0 ];then
 		echo "Fizz"
-	fi
 	else
 		echo "$i"
+	fi
 	((i++))
 done
