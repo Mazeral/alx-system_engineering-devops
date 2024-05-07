@@ -2,5 +2,4 @@
 #a Bash script that stops 4-to_infinity_and_beyond process.
 #Requirements:
 #   You cannot use kill or killall
-pid=$(ps aux | grep 4-to_infinity_and_beyond | grep -v grep | awk '{print $2}')
-pkill -f "$pid"
+pkill -f 4-to_infinity_and_beyond
