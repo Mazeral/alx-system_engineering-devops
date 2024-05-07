@@ -16,5 +16,7 @@ while ((i<101)); do
 	elif [ $((i % 3)) -eq 0 ];then
 		echo "Fizz"
 	fi
+	else
+		echo "$i"
 	((i++))
 done
