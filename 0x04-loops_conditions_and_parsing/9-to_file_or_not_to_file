@@ -12,7 +12,7 @@
 #       if the file is not a regular file: (nothing)
 file_path="school"
 
-if [ -f $file_path ] || [ -d $file_path ]; then
+if [ -e $file_path ]; then
 	echo "file exists"
 
 	if [ -f $file_path ];then
