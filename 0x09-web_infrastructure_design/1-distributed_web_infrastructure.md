@@ -19,7 +19,7 @@ The issues are with this infrastructure:
 
 - Where are SPOF: The loadbalaner: If the load balancer failes, the web app will fail
 The application server: If it fails, then the web app will.
-The database: If it fails, then web app will.
+
 - Security issues (no firewall, no HTTPS): Without a firewall, the webapp is vulnerable to external attacks.
 Using HTTP protocl makes the data visible to external attackers which is a huge risk considering if the data contains private information about the users
 - No monitoring: Detecting failures and performance issues is difficult without monitoring
