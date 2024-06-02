@@ -1,3 +1,4 @@
+![The whiteboard](https://raw.githubusercontent.com/Mazeral/alx-system_engineering-devops/main/0x09-web_infrastructure_design/2-secured_and_monitored_web_infrastructure.png)
 Some specifics about this infrastructure:
 
 - For every additional element, why you are adding it:
