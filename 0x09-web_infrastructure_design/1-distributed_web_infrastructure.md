@@ -1,4 +1,4 @@
-![The whiteboard]()
+![The whiteboard](https://raw.githubusercontent.com/Mazeral/alx-system_engineering-devops/main/0x09-web_infrastructure_design/1-distributed_web_infrastructure.png)
 Some specifics about this infrastructure:
 
 - For every additional element, why you are adding it: Adding a load balancer distributes the load coming the users to multiple web servers.
