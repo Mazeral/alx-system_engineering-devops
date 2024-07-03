@@ -1,3 +1,4 @@
+#!/usr/bin/pip
 # installs flask
 
 package { 'flask':
