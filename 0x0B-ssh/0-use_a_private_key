@@ -1,3 +1,4 @@
 #!/usr/bin/env bash
+# using ssh key
 
 ssh i ~./shh/school ubuntu@100.26.17.150
