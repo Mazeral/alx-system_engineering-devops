@@ -1,0 +1,5 @@
+Host ubuntu
+	HostName 100.26.17.150
+	User ubuntu
+	IndetifyFile ~/.ssh/school
+	PasswordAuthentication no
