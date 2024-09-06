@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+# install ngnix
+
+sudo su;
+apt install ngnix -y
+echo "server { listen 80; 513329-web-01 100.26.17.150;}" > /etc/ngnix/ngnix.conf
+echo "Hello, World!" > /var/www/html/index.nginx-debian.html
+systemctl start ngnix
