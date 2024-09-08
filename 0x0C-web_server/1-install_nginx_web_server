@@ -1,24 +1,8 @@
 #!/usr/bin/env bash
-#setting up Nginx
-
-# Install Nginx
-apt-get update > /dev/null 2>&1
-apt-get install -y nginx > /dev/null 2>&1
-
-# Create a new file in the Nginx configuration directory
+# Install the web server 'nginx' on the server
+sudo apt-get update -y
+sudo apt-get upgrade -y
+sudo apt-get install nginx -y
+ufw allow 'Nginx HTTP'
 echo "Hello World!" > /var/www/html/index.html
-
-# Configure Nginx to serve the index.html file
-echo "server {
-    listen 80;
-    server_name localhost;
-    location / {
-        index index.html;
-    }
-}" > /etc/nginx/sites-available/web01
-
-# Create a symbolic link to the new configuration file
-ln -s /etc/nginx/sites-available/web01 /etc/nginx/sites-enabled/
-
-# Restart Nginx
-service nginx restart > /dev/null 2>&1
+sudo service nginx start
