@@ -1,35 +1,35 @@
-**Step 1: DNS Request**
+Step 1: DNS Request
 
 When you type https://www.google.com into your browser, the first step is to resolve the domain name to an IP address. This is done through a process called DNS (Domain Name System) resolution. Your browser sends a request to a DNS resolver, which is usually provided by your internet service provider (ISP) or your operating system. The DNS resolver looks up the IP address associated with the domain name in a DNS database and returns it to your browser.
 
-**Step 2: TCP/IP Connection Establishment**
+Step 2: TCP/IP Connection Establishment
 
 Once the IP address is resolved, your browser establishes a connection to the server using TCP/IP (Transmission Control Protocol/Internet Protocol). TCP/IP is a suite of protocols that enables devices to communicate with each other over the internet. The browser sends a SYN (synchronize) packet to the server, which acknowledges the request with a SYN-ACK packet. The browser then sends an ACK (acknowledgment) packet to complete the three-way handshake, establishing a connection.
 
-**Step 3: Firewall Check**
+Step 3: Firewall Check
 
 Before the data is sent, the connection is checked by a firewall. Firewalls are network security systems that monitor and control incoming and outgoing network traffic based on predetermined security rules. The firewall checks the connection to ensure it is legitimate and not a threat to the server.
 
-**Step 4: HTTPS/SSL Handshake**
+Step 4: HTTPS/SSL Handshake
 
 Since you typed https://www.google.com, your browser is expecting a secure connection. The browser initiates an HTTPS (Hypertext Transfer Protocol Secure) connection by sending a ClientHello message to the server. The server responds with a ServerHello message, and the two parties negotiate a shared secret key using the SSL/TLS (Secure Sockets Layer/Transport Layer Security) protocol. This ensures that all data exchanged between the browser and server is encrypted and secure.
 
-**Step 5: Load Balancer**
+Step 5: Load Balancer
 
 Google is a large and busy website, so it's likely that multiple servers are used to handle the traffic. A load balancer is used to distribute incoming traffic across multiple servers, ensuring that no single server is overwhelmed and becomes a single point of failure. The load balancer directs the request to one of the available servers, which then processes the request.
 
-**Step 6: Web Server**
+Step 6: Web Server
 
 The request is then processed by a web server, which is responsible for serving web pages and handling HTTP requests. The web server is configured to respond to requests for the www.google.com domain and returns the requested web page to the browser.
 
-**Step 7: Application Server**
+Step 7: Application Server
 
 The web server may also interact with an application server, which is responsible for executing server-side logic and generating dynamic content. In the case of Google, the application server is likely handling tasks such as search queries, user authentication, and personalized recommendations.
 
-**Step 8: Database**
+Step 8: Database
 
 The application server may also interact with a database, which stores and retrieves data used by the application. In the case of Google, the database is likely storing user data, search queries, and other relevant information.
 
-**Step 9: Response**
+Step 9: Response
 
 Finally, the browser receives the response from the server and displays the requested web page. The response may include HTML, CSS, JavaScript, images, and other resources that are used to render the page.
