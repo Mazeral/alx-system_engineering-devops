@@ -8,8 +8,17 @@ apt-get install -y nginx > /dev/null 2>&1
 # Create a new file in the Nginx configuration directory
 echo "Hello World!" > /var/www/html/index.html
 
-# Configure Nginx to listen on port 80
-sed -i 's/listen 8080;/listen 80;/g' /etc/nginx/sites-available/default
+# Configure Nginx to serve the index.html file
+echo "server {
+    listen 80;
+    server_name localhost;
+    location / {
+        index index.html;
+    }
+}" > /etc/nginx/sites-available/web01
+
+# Create a symbolic link to the new configuration file
+ln -s /etc/nginx/sites-available/web01 /etc/nginx/sites-enabled/
 
 # Restart Nginx
 service nginx restart > /dev/null 2>&1
